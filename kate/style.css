@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,400;0,500;0,900;1,300;1,900&family=Roboto+Mono:ital,wght@0,300;0,600;1,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    height: 100vh;
+    padding: 32px;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(120deg, #000000, #180d24);
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    width: 550px;
+    height: 100%;
+    border-radius: 8px;
+    transition: 1000ms all;
+    transform-origin: center left;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    margin-bottom: 17px; /* Add margin between each row */
+    border-radius: 40px;
+}
+
+.card img {
+    width: 100%; /* Ensure all images fill the card width */
+    height: auto; /* Allow images to maintain aspect ratio */
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+
+.card image.landscape{
+    height: 100px;
+}
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.15);
+}
+
+.card:hover figcaption {
+    font-size: 0.6rem;
+    position: absolute;
+    height: 80px;
+    width: 160px;
+    display: flex;
+    align-items: end;
+    background: linear-gradient(to top, rgba(219, 213, 213, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+    color: rgb(0, 0, 0);
+    left: 0px;
+    bottom: 0px;
+    padding-left: 12px;
+    padding-bottom: 10px;
+}
+
+.card:hover ~ .card {
+    font-weight: bold;
+    cursor: pointer;
+    transform: translateX(22px);
+}
+
+
+h1{
+    font-size: 7em;
+    color: white;
+    padding-bottom: 0.5em;
+}
