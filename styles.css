@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+h1, h2 {
+  text-align: center;
+  margin-right: 1em;
+  color: white;
+}
+
+img:hover {
+  cursor: pointer;
+  transform: scale(1.15);
+  transition: 1s;
+}
+
+img{
+  margin-left: 1em;
+  height: 13em;
+  width: 13em;
+
+  object-fit: cover;
+}
+
+.gallery{
+  display: flex;
+}
